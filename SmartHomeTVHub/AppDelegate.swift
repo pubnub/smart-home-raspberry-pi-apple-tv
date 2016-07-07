@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import PubNub
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
 
     var window: UIWindow?
-
-
+    var objectStates: [String : String] = [:]
+    lazy var client: PubNub = {
+        let config = PNConfiguration(publishKey: "pub-c-63c972fb-df4e-47f7-82da-e659e28f7cb7", subscribeKey: "sub-c-28786a2e-31a3-11e6-be83-0619f8945a4f")
+        let pub = PubNub.clientWithConfiguration(config)
+        return pub
+    }()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true

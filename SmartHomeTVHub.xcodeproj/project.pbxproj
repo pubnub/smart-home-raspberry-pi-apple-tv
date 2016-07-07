@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3F66C61D24940C00B57316 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B7281D0F244A00122A23 /* SF-UI-Display-Black.otf */; };
+		4B3F66C71D24940C00B57316 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B7291D0F244A00122A23 /* SF-UI-Display-Bold.otf */; };
+		4B3F66C81D24940C00B57316 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72A1D0F244A00122A23 /* SF-UI-Display-Heavy.otf */; };
+		4B3F66C91D24940C00B57316 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72B1D0F244A00122A23 /* SF-UI-Display-Light.otf */; };
+		4B3F66CA1D24940C00B57316 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72C1D0F244A00122A23 /* SF-UI-Display-Medium.otf */; };
+		4B3F66CB1D24940C00B57316 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72D1D0F244A00122A23 /* SF-UI-Display-Regular.otf */; };
+		4B3F66CC1D24940C00B57316 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72E1D0F244A00122A23 /* SF-UI-Display-Semibold.otf */; };
+		4B3F66CD1D24940C00B57316 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72F1D0F244A00122A23 /* SF-UI-Display-Thin.otf */; };
+		4B3F66CE1D24940C00B57316 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B7301D0F244A00122A23 /* SF-UI-Display-Ultralight.otf */; };
 		4B58E9611D0A15A600947B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E9601D0A15A600947B3C /* AppDelegate.swift */; };
-		4B58E9631D0A15A600947B3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E9621D0A15A600947B3C /* ViewController.swift */; };
+		4B58E9631D0A15A600947B3C /* SmartHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E9621D0A15A600947B3C /* SmartHubViewController.swift */; };
 		4B58E9661D0A15A600947B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B58E9641D0A15A600947B3C /* Main.storyboard */; };
 		4B58E9681D0A15A600947B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B58E9671D0A15A600947B3C /* Assets.xcassets */; };
 		4B58E9731D0A15A600947B3C /* SmartHomeTVHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E9721D0A15A600947B3C /* SmartHomeTVHubTests.swift */; };
 		4B58E97E1D0A15A600947B3C /* SmartHomeTVHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E97D1D0A15A600947B3C /* SmartHomeTVHubUITests.swift */; };
+		4B58E98C1D0A167000947B3C /* IoTObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E98B1D0A167000947B3C /* IoTObjectCell.swift */; };
+		4B712C321D1C547C008E9E8F /* LightBulbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B712C311D1C547C008E9E8F /* LightBulbCell.swift */; };
+		4B712C361D1C5516008E9E8F /* KettleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B712C351D1C5516008E9E8F /* KettleCell.swift */; };
+		4B712C381D1C5563008E9E8F /* ThermostatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B712C371D1C5563008E9E8F /* ThermostatCell.swift */; };
+		94CAA677AF73695F88A34F85 /* Pods_SmartHomeTVHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6D34B42B0A311025BF8086 /* Pods_SmartHomeTVHub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B29B7281D0F244A00122A23 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		4B29B7291D0F244A00122A23 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		4B29B72A1D0F244A00122A23 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		4B29B72B1D0F244A00122A23 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		4B29B72C1D0F244A00122A23 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		4B29B72D1D0F244A00122A23 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		4B29B72E1D0F244A00122A23 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		4B29B72F1D0F244A00122A23 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		4B29B7301D0F244A00122A23 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		4B58E95D1D0A15A600947B3C /* SmartHomeTVHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeTVHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B58E9601D0A15A600947B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B58E9621D0A15A600947B3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B58E9621D0A15A600947B3C /* SmartHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHubViewController.swift; sourceTree = "<group>"; };
 		4B58E9651D0A15A600947B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B58E9671D0A15A600947B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B58E9691D0A15A600947B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +68,13 @@
 		4B58E9791D0A15A600947B3C /* SmartHomeTVHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeTVHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B58E97D1D0A15A600947B3C /* SmartHomeTVHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeTVHubUITests.swift; sourceTree = "<group>"; };
 		4B58E97F1D0A15A600947B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B58E98B1D0A167000947B3C /* IoTObjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoTObjectCell.swift; sourceTree = "<group>"; };
+		4B712C311D1C547C008E9E8F /* LightBulbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBulbCell.swift; sourceTree = "<group>"; };
+		4B712C351D1C5516008E9E8F /* KettleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KettleCell.swift; sourceTree = "<group>"; };
+		4B712C371D1C5563008E9E8F /* ThermostatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatCell.swift; sourceTree = "<group>"; };
+		822301B88D566194712624FB /* Pods-SmartHomeTVHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeTVHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub.release.xcconfig"; sourceTree = "<group>"; };
+		A543E8E087BE0F0D11886401 /* Pods-SmartHomeTVHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeTVHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6D34B42B0A311025BF8086 /* Pods_SmartHomeTVHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeTVHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94CAA677AF73695F88A34F85 /* Pods_SmartHomeTVHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +103,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B29B7271D0F243C00122A23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B29B7281D0F244A00122A23 /* SF-UI-Display-Black.otf */,
+				4B29B7291D0F244A00122A23 /* SF-UI-Display-Bold.otf */,
+				4B29B72A1D0F244A00122A23 /* SF-UI-Display-Heavy.otf */,
+				4B29B72B1D0F244A00122A23 /* SF-UI-Display-Light.otf */,
+				4B29B72C1D0F244A00122A23 /* SF-UI-Display-Medium.otf */,
+				4B29B72D1D0F244A00122A23 /* SF-UI-Display-Regular.otf */,
+				4B29B72E1D0F244A00122A23 /* SF-UI-Display-Semibold.otf */,
+				4B29B72F1D0F244A00122A23 /* SF-UI-Display-Thin.otf */,
+				4B29B7301D0F244A00122A23 /* SF-UI-Display-Ultralight.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		4B58E9541D0A15A600947B3C = {
 			isa = PBXGroup;
 			children = (
+				4B29B7271D0F243C00122A23 /* Resources */,
 				4B58E95F1D0A15A600947B3C /* SmartHomeTVHub */,
 				4B58E9711D0A15A600947B3C /* SmartHomeTVHubTests */,
 				4B58E97C1D0A15A600947B3C /* SmartHomeTVHubUITests */,
 				4B58E95E1D0A15A600947B3C /* Products */,
+				CC101284CD152CE9E5EF23FE /* Pods */,
+				4CCD8215670E60585F62F3E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				4B58E9601D0A15A600947B3C /* AppDelegate.swift */,
-				4B58E9621D0A15A600947B3C /* ViewController.swift */,
+				4B58E9621D0A15A600947B3C /* SmartHubViewController.swift */,
+				4B58E98B1D0A167000947B3C /* IoTObjectCell.swift */,
+				4B712C311D1C547C008E9E8F /* LightBulbCell.swift */,
+				4B712C351D1C5516008E9E8F /* KettleCell.swift */,
+				4B712C371D1C5563008E9E8F /* ThermostatCell.swift */,
 				4B58E9641D0A15A600947B3C /* Main.storyboard */,
 				4B58E9671D0A15A600947B3C /* Assets.xcassets */,
 				4B58E9691D0A15A600947B3C /* Info.plist */,
@@ -122,6 +176,23 @@
 			path = SmartHomeTVHubUITests;
 			sourceTree = "<group>";
 		};
+		4CCD8215670E60585F62F3E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D34B42B0A311025BF8086 /* Pods_SmartHomeTVHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC101284CD152CE9E5EF23FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A543E8E087BE0F0D11886401 /* Pods-SmartHomeTVHub.debug.xcconfig */,
+				822301B88D566194712624FB /* Pods-SmartHomeTVHub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B58E9821D0A15A600947B3C /* Build configuration list for PBXNativeTarget "SmartHomeTVHub" */;
 			buildPhases = (
+				5EC6B01317F6068667B70E51 /* 📦 Check Pods Manifest.lock */,
 				4B58E9591D0A15A600947B3C /* Sources */,
 				4B58E95A1D0A15A600947B3C /* Frameworks */,
 				4B58E95B1D0A15A600947B3C /* Resources */,
+				FD5728822BF1D34696EB13E4 /* 📦 Embed Pods Frameworks */,
+				DF35F6BDA2BBC9C684E0A823 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,8 +300,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3F66C61D24940C00B57316 /* SF-UI-Display-Black.otf in Resources */,
+				4B3F66C81D24940C00B57316 /* SF-UI-Display-Heavy.otf in Resources */,
+				4B3F66CA1D24940C00B57316 /* SF-UI-Display-Medium.otf in Resources */,
+				4B3F66C91D24940C00B57316 /* SF-UI-Display-Light.otf in Resources */,
+				4B3F66CD1D24940C00B57316 /* SF-UI-Display-Thin.otf in Resources */,
 				4B58E9681D0A15A600947B3C /* Assets.xcassets in Resources */,
+				4B3F66C71D24940C00B57316 /* SF-UI-Display-Bold.otf in Resources */,
+				4B3F66CB1D24940C00B57316 /* SF-UI-Display-Regular.otf in Resources */,
 				4B58E9661D0A15A600947B3C /* Main.storyboard in Resources */,
+				4B3F66CC1D24940C00B57316 /* SF-UI-Display-Semibold.otf in Resources */,
+				4B3F66CE1D24940C00B57316 /* SF-UI-Display-Ultralight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,13 +330,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EC6B01317F6068667B70E51 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF35F6BDA2BBC9C684E0A823 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5728822BF1D34696EB13E4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B58E9591D0A15A600947B3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B58E9631D0A15A600947B3C /* ViewController.swift in Sources */,
+				4B712C361D1C5516008E9E8F /* KettleCell.swift in Sources */,
+				4B712C321D1C547C008E9E8F /* LightBulbCell.swift in Sources */,
+				4B712C381D1C5563008E9E8F /* ThermostatCell.swift in Sources */,
+				4B58E9631D0A15A600947B3C /* SmartHubViewController.swift in Sources */,
 				4B58E9611D0A15A600947B3C /* AppDelegate.swift in Sources */,
+				4B58E98C1D0A167000947B3C /* IoTObjectCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,9 +520,11 @@
 		};
 		4B58E9831D0A15A600947B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A543E8E087BE0F0D11886401 /* Pods-SmartHomeTVHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SmartHomeTVHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PubNub.SmartHomeTVHub;
@@ -397,9 +534,11 @@
 		};
 		4B58E9841D0A15A600947B3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822301B88D566194712624FB /* Pods-SmartHomeTVHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SmartHomeTVHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PubNub.SmartHomeTVHub;
@@ -472,6 +611,7 @@
 				4B58E9841D0A15A600947B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B58E9851D0A15A600947B3C /* Build configuration list for PBXNativeTarget "SmartHomeTVHubTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +620,7 @@
 				4B58E9871D0A15A600947B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B58E9881D0A15A600947B3C /* Build configuration list for PBXNativeTarget "SmartHomeTVHubUITests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +629,7 @@
 				4B58E98A1D0A15A600947B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
