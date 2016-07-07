@@ -1,0 +1,289 @@
+import RPi.GPIO as GPIO
+import os
+import glob
+import time
+import sys
+import max7219.led as led
+from max7219.font import proportional, SINCLAIR_FONT, TINY_FONT, CP437_FONT
+from pubnub import Pubnub
+
+GPIO.setmode (GPIO.BCM)
+
+LED_PIN = 17
+
+GPIO.setup(LED_PIN,GPIO.OUT)
+
+device = led.matrix(cascaded=1)
+
+pubnub = Pubnub(publish_key='pub-c-63c972fb-df4e-47f7-82da-e659e28f7cb7', subscribe_key='sub-c-28786a2e-31a3-11e6-be83-0619f8945a4f')
+
+channel = 'Smart_Home'
+
+os.system('modprobe w1-gpio')
+os.system('modprobe w1-therm')
+
+base_dir = '/sys/bus/w1/devices/'
+device_folder = glob.glob(base_dir + '28*')[0]
+device_file = device_folder + '/w1_slave'
+
+
+def read_temp_raw():
+	f = open(device_file, 'r')
+	lines = f.readlines()
+	f.close()
+	return lines
+
+def read_temp():
+	lines = read_temp_raw()
+	while lines[0].strip()[-3:] != 'YES':
+		time.sleep(0.1)
+		lines = read_tempt_raw()
+	equals_pos = lines[1].find('t=')
+	if equals_pos != -1:
+		temp_string = lines[1][equals_pos+2:]
+		temp_c = float(temp_string) / 1000.0
+		temp_f = temp_c * 9.0/5.0 + 32.0
+		return temp_c
+
+
+def print50():
+	device.pixel(2, 7, 1, redraw=True)
+	device.pixel(2, 6, 1, redraw=True)
+	device.pixel(2, 5, 1, redraw=True)
+	device.pixel(3, 7, 1, redraw=True)
+	device.pixel(4, 5, 1, redraw=True)
+	device.pixel(4, 6, 1, redraw=True)
+	device.pixel(4, 7, 1, redraw=True)
+	device.pixel(5, 5, 1, redraw=True)
+	device.pixel(6, 7, 1, redraw=True)
+	device.pixel(6, 6, 1, redraw=True)
+	device.pixel(6, 5, 1, redraw=True)
+
+def print60():
+	device.pixel(2, 7, 1, redraw=True)
+	device.pixel(2, 6, 1, redraw=True)
+	device.pixel(2, 5, 1, redraw=True)
+	device.pixel(3, 7, 1, redraw=True)
+	device.pixel(4, 5, 1, redraw=True)
+	device.pixel(4, 6, 1, redraw=True)
+	device.pixel(4, 7, 1, redraw=True)
+	device.pixel(5, 5, 1, redraw=True)
+	device.pixel(6, 7, 1, redraw=True)
+	device.pixel(6, 6, 1, redraw=True)
+	device.pixel(6, 5, 1, redraw=True)
+	device.pixel(5, 7, 1, redraw=True)
+
+def print70():
+	device.pixel(4, 5, 1, redraw=True)
+	device.pixel(5, 5, 1, redraw=True)
+	device.pixel(6, 5, 1, redraw=True)
+	device.pixel(3, 5, 1, redraw=True)
+	device.pixel(2, 5, 1, redraw=True)
+	device.pixel(2, 6, 1, redraw=True)
+	device.pixel(2, 7, 1, redraw=True)
+
+def print80():
+	device.pixel(2, 7, 1, redraw=True)
+	device.pixel(2, 6, 1, redraw=True)
+	device.pixel(2, 5, 1, redraw=True)
+	device.pixel(3, 7, 1, redraw=True)
+	device.pixel(4, 5, 1, redraw=True)
+	device.pixel(4, 6, 1, redraw=True)
+	device.pixel(4, 7, 1, redraw=True)
+	device.pixel(5, 5, 1, redraw=True)
+	device.pixel(6, 7, 1, redraw=True)
+	device.pixel(6, 6, 1, redraw=True)
+	device.pixel(6, 5, 1, redraw=True)
+	device.pixel(5, 7, 1, redraw=True)
+	device.pixel(3, 5, 1, redraw=True)
+
+def print1():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 3, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+
+def print2():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 3, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+	device.pixel(6, 2, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	
+
+def print3():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(6, 2, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+
+def print4():
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(2, 3, 1, redraw=True)
+
+def print5():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+	device.pixel(6, 2, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+
+def print6():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+	device.pixel(6, 2, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(5, 3, 1, redraw=True)
+
+def print7():
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 3, 1, redraw=True)
+
+def print8():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+	device.pixel(6, 2, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(5, 3, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+
+def print9():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 2, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+
+def print0():
+	device.pixel(2, 3, 1, redraw=True)
+	device.pixel(2, 2, 1, redraw=True)
+	device.pixel(2, 1, 1, redraw=True)
+	device.pixel(3, 3, 1, redraw=True)
+	device.pixel(4, 1, 1, redraw=True)
+	device.pixel(4, 3, 1, redraw=True)
+	device.pixel(5, 1, 1, redraw=True)
+	device.pixel(6, 3, 1, redraw=True)
+	device.pixel(6, 2, 1, redraw=True)
+	device.pixel(6, 1, 1, redraw=True)
+	device.pixel(5, 3, 1, redraw=True)
+	device.pixel(3, 1, 1, redraw=True)
+
+def writeTemp(t,d):
+	t = int(t)
+	d = int(d)
+	if t==5:
+		print50()
+	if t==6:
+		print60()
+	if t==7:
+		print70()
+	if t==8:
+		print80()
+	if d==0:
+		print0()
+	if d==1:
+		print1()
+	if d==2:
+		print2()
+	if d==3:
+		print3()
+	if d==4:
+		print4()
+	if d==5:
+		print5()
+	if d==6:
+		print6()
+	if d==7:
+		print7()
+	if d==8:
+		print8()
+	if d==9:
+		print9()
+
+
+def _callback(m, channel):
+	if m.get("light") == "on":
+		GPIO.output(LED_PIN,True)
+	if m.get("light") == "off":
+		GPIO.output(LED_PIN,False)
+	if m.get("thermostat") != None:
+		device.clear()
+		writeTemp(str(m.get("thermostat"))[0],str(m.get("thermostat"))[1])
+
+def pcallback(m, channel):
+	if m['action'] == 'join':
+		if GPIO.input(LED_PIN)==1:
+			pubnub.publish(channel=channel, message={"light":"on","thermostat":"73", "kettle":"on"})
+		elif GPIO.input(LED_PIN)==0:
+			pubnub.publish(channel=channel, message={"light":"off","thermostat":"73", "kettle":"on"})
+		
+def sendTemp():
+	f = int(read_temp())
+	t = int(read_temp())
+	if f != t:
+		pubnub.publish(channel=channel, message = {"temp":str(t)}, error=_error)
+
+def _error(m):
+	print(m)
+
+writeTemp(7,3)
+pubnub.presence(channel=channel, callback=pcallback, error=_error)
+pubnub.subscribe(channels=channel, callback=_callback, error=_error)
+
+while True:
+    sendTemp()
+
+
+GPIO.cleanup
