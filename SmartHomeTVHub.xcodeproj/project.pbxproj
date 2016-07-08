@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B3F66C61D24940C00B57316 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B7281D0F244A00122A23 /* SF-UI-Display-Black.otf */; };
-		4B3F66C71D24940C00B57316 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B7291D0F244A00122A23 /* SF-UI-Display-Bold.otf */; };
-		4B3F66C81D24940C00B57316 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72A1D0F244A00122A23 /* SF-UI-Display-Heavy.otf */; };
-		4B3F66C91D24940C00B57316 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72B1D0F244A00122A23 /* SF-UI-Display-Light.otf */; };
-		4B3F66CA1D24940C00B57316 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72C1D0F244A00122A23 /* SF-UI-Display-Medium.otf */; };
-		4B3F66CB1D24940C00B57316 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72D1D0F244A00122A23 /* SF-UI-Display-Regular.otf */; };
-		4B3F66CC1D24940C00B57316 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72E1D0F244A00122A23 /* SF-UI-Display-Semibold.otf */; };
-		4B3F66CD1D24940C00B57316 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B72F1D0F244A00122A23 /* SF-UI-Display-Thin.otf */; };
-		4B3F66CE1D24940C00B57316 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4B29B7301D0F244A00122A23 /* SF-UI-Display-Ultralight.otf */; };
 		4B58E9611D0A15A600947B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E9601D0A15A600947B3C /* AppDelegate.swift */; };
 		4B58E9631D0A15A600947B3C /* SmartHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58E9621D0A15A600947B3C /* SmartHubViewController.swift */; };
 		4B58E9661D0A15A600947B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B58E9641D0A15A600947B3C /* Main.storyboard */; };
@@ -26,6 +17,15 @@
 		4B712C321D1C547C008E9E8F /* LightBulbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B712C311D1C547C008E9E8F /* LightBulbCell.swift */; };
 		4B712C361D1C5516008E9E8F /* KettleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B712C351D1C5516008E9E8F /* KettleCell.swift */; };
 		4B712C381D1C5563008E9E8F /* ThermostatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B712C371D1C5563008E9E8F /* ThermostatCell.swift */; };
+		4BB8F1E41D2F244C00FAB167 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1DB1D2F244C00FAB167 /* SF-UI-Display-Black.otf */; };
+		4BB8F1E51D2F244C00FAB167 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1DC1D2F244C00FAB167 /* SF-UI-Display-Bold.otf */; };
+		4BB8F1E61D2F244C00FAB167 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1DD1D2F244C00FAB167 /* SF-UI-Display-Heavy.otf */; };
+		4BB8F1E71D2F244C00FAB167 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1DE1D2F244C00FAB167 /* SF-UI-Display-Light.otf */; };
+		4BB8F1E81D2F244C00FAB167 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1DF1D2F244C00FAB167 /* SF-UI-Display-Medium.otf */; };
+		4BB8F1E91D2F244C00FAB167 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1E01D2F244C00FAB167 /* SF-UI-Display-Regular.otf */; };
+		4BB8F1EA1D2F244C00FAB167 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1E11D2F244C00FAB167 /* SF-UI-Display-Semibold.otf */; };
+		4BB8F1EB1D2F244C00FAB167 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1E21D2F244C00FAB167 /* SF-UI-Display-Thin.otf */; };
+		4BB8F1EC1D2F244C00FAB167 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8F1E31D2F244C00FAB167 /* SF-UI-Display-Ultralight.otf */; };
 		94CAA677AF73695F88A34F85 /* Pods_SmartHomeTVHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6D34B42B0A311025BF8086 /* Pods_SmartHomeTVHub.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,15 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B29B7281D0F244A00122A23 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
-		4B29B7291D0F244A00122A23 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
-		4B29B72A1D0F244A00122A23 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
-		4B29B72B1D0F244A00122A23 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
-		4B29B72C1D0F244A00122A23 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
-		4B29B72D1D0F244A00122A23 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
-		4B29B72E1D0F244A00122A23 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
-		4B29B72F1D0F244A00122A23 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
-		4B29B7301D0F244A00122A23 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		4B58E95D1D0A15A600947B3C /* SmartHomeTVHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeTVHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B58E9601D0A15A600947B3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B58E9621D0A15A600947B3C /* SmartHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHubViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +63,15 @@
 		4B712C311D1C547C008E9E8F /* LightBulbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightBulbCell.swift; sourceTree = "<group>"; };
 		4B712C351D1C5516008E9E8F /* KettleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KettleCell.swift; sourceTree = "<group>"; };
 		4B712C371D1C5563008E9E8F /* ThermostatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatCell.swift; sourceTree = "<group>"; };
+		4BB8F1DB1D2F244C00FAB167 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		4BB8F1DC1D2F244C00FAB167 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		4BB8F1DD1D2F244C00FAB167 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		4BB8F1DE1D2F244C00FAB167 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		4BB8F1DF1D2F244C00FAB167 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		4BB8F1E01D2F244C00FAB167 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		4BB8F1E11D2F244C00FAB167 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		4BB8F1E21D2F244C00FAB167 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		4BB8F1E31D2F244C00FAB167 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		822301B88D566194712624FB /* Pods-SmartHomeTVHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeTVHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub.release.xcconfig"; sourceTree = "<group>"; };
 		A543E8E087BE0F0D11886401 /* Pods-SmartHomeTVHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeTVHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub.debug.xcconfig"; sourceTree = "<group>"; };
 		DB6D34B42B0A311025BF8086 /* Pods_SmartHomeTVHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHomeTVHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,26 +103,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B29B7271D0F243C00122A23 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4B29B7281D0F244A00122A23 /* SF-UI-Display-Black.otf */,
-				4B29B7291D0F244A00122A23 /* SF-UI-Display-Bold.otf */,
-				4B29B72A1D0F244A00122A23 /* SF-UI-Display-Heavy.otf */,
-				4B29B72B1D0F244A00122A23 /* SF-UI-Display-Light.otf */,
-				4B29B72C1D0F244A00122A23 /* SF-UI-Display-Medium.otf */,
-				4B29B72D1D0F244A00122A23 /* SF-UI-Display-Regular.otf */,
-				4B29B72E1D0F244A00122A23 /* SF-UI-Display-Semibold.otf */,
-				4B29B72F1D0F244A00122A23 /* SF-UI-Display-Thin.otf */,
-				4B29B7301D0F244A00122A23 /* SF-UI-Display-Ultralight.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		4B58E9541D0A15A600947B3C = {
 			isa = PBXGroup;
 			children = (
-				4B29B7271D0F243C00122A23 /* Resources */,
+				4BB8F1DA1D2F244C00FAB167 /* Resources */,
 				4B58E95F1D0A15A600947B3C /* SmartHomeTVHub */,
 				4B58E9711D0A15A600947B3C /* SmartHomeTVHubTests */,
 				4B58E97C1D0A15A600947B3C /* SmartHomeTVHubUITests */,
@@ -174,6 +158,23 @@
 				4B58E97F1D0A15A600947B3C /* Info.plist */,
 			);
 			path = SmartHomeTVHubUITests;
+			sourceTree = "<group>";
+		};
+		4BB8F1DA1D2F244C00FAB167 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BB8F1DB1D2F244C00FAB167 /* SF-UI-Display-Black.otf */,
+				4BB8F1DC1D2F244C00FAB167 /* SF-UI-Display-Bold.otf */,
+				4BB8F1DD1D2F244C00FAB167 /* SF-UI-Display-Heavy.otf */,
+				4BB8F1DE1D2F244C00FAB167 /* SF-UI-Display-Light.otf */,
+				4BB8F1DF1D2F244C00FAB167 /* SF-UI-Display-Medium.otf */,
+				4BB8F1E01D2F244C00FAB167 /* SF-UI-Display-Regular.otf */,
+				4BB8F1E11D2F244C00FAB167 /* SF-UI-Display-Semibold.otf */,
+				4BB8F1E21D2F244C00FAB167 /* SF-UI-Display-Thin.otf */,
+				4BB8F1E31D2F244C00FAB167 /* SF-UI-Display-Ultralight.otf */,
+			);
+			name = Resources;
+			path = SmartHomeTVHub/Resources;
 			sourceTree = "<group>";
 		};
 		4CCD8215670E60585F62F3E2 /* Frameworks */ = {
@@ -300,17 +301,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B3F66C61D24940C00B57316 /* SF-UI-Display-Black.otf in Resources */,
-				4B3F66C81D24940C00B57316 /* SF-UI-Display-Heavy.otf in Resources */,
-				4B3F66CA1D24940C00B57316 /* SF-UI-Display-Medium.otf in Resources */,
-				4B3F66C91D24940C00B57316 /* SF-UI-Display-Light.otf in Resources */,
-				4B3F66CD1D24940C00B57316 /* SF-UI-Display-Thin.otf in Resources */,
+				4BB8F1E41D2F244C00FAB167 /* SF-UI-Display-Black.otf in Resources */,
+				4BB8F1E61D2F244C00FAB167 /* SF-UI-Display-Heavy.otf in Resources */,
+				4BB8F1E81D2F244C00FAB167 /* SF-UI-Display-Medium.otf in Resources */,
+				4BB8F1E71D2F244C00FAB167 /* SF-UI-Display-Light.otf in Resources */,
+				4BB8F1EB1D2F244C00FAB167 /* SF-UI-Display-Thin.otf in Resources */,
 				4B58E9681D0A15A600947B3C /* Assets.xcassets in Resources */,
-				4B3F66C71D24940C00B57316 /* SF-UI-Display-Bold.otf in Resources */,
-				4B3F66CB1D24940C00B57316 /* SF-UI-Display-Regular.otf in Resources */,
+				4BB8F1E51D2F244C00FAB167 /* SF-UI-Display-Bold.otf in Resources */,
+				4BB8F1E91D2F244C00FAB167 /* SF-UI-Display-Regular.otf in Resources */,
 				4B58E9661D0A15A600947B3C /* Main.storyboard in Resources */,
-				4B3F66CC1D24940C00B57316 /* SF-UI-Display-Semibold.otf in Resources */,
-				4B3F66CE1D24940C00B57316 /* SF-UI-Display-Ultralight.otf in Resources */,
+				4BB8F1EA1D2F244C00FAB167 /* SF-UI-Display-Semibold.otf in Resources */,
+				4BB8F1EC1D2F244C00FAB167 /* SF-UI-Display-Ultralight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
