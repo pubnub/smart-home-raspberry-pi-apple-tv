@@ -58,7 +58,7 @@ class SmartHubViewController: UIViewController, UICollectionViewDelegate, UIColl
         let object = Array(objectStates.keys)[indexPath.row]
         let state = Array(objectStates.values)[indexPath.row]
         
-        switch Array(objectStates.keys)[indexPath.row] {
+        switch object {
             case "light":
                 cellIdentifier = "lightCell"
             case "temp":
