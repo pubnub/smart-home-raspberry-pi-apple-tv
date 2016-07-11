@@ -201,12 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B58E9821D0A15A600947B3C /* Build configuration list for PBXNativeTarget "SmartHomeTVHub" */;
 			buildPhases = (
-				5EC6B01317F6068667B70E51 /* 📦 Check Pods Manifest.lock */,
+				5EC6B01317F6068667B70E51 /* [CP] Check Pods Manifest.lock */,
 				4B58E9591D0A15A600947B3C /* Sources */,
 				4B58E95A1D0A15A600947B3C /* Frameworks */,
 				4B58E95B1D0A15A600947B3C /* Resources */,
-				FD5728822BF1D34696EB13E4 /* 📦 Embed Pods Frameworks */,
-				DF35F6BDA2BBC9C684E0A823 /* 📦 Copy Pods Resources */,
+				FD5728822BF1D34696EB13E4 /* [CP] Embed Pods Frameworks */,
+				DF35F6BDA2BBC9C684E0A823 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,14 +332,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EC6B01317F6068667B70E51 /* 📦 Check Pods Manifest.lock */ = {
+		5EC6B01317F6068667B70E51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,14 +347,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DF35F6BDA2BBC9C684E0A823 /* 📦 Copy Pods Resources */ = {
+		DF35F6BDA2BBC9C684E0A823 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,14 +362,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHomeTVHub/Pods-SmartHomeTVHub-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD5728822BF1D34696EB13E4 /* 📦 Embed Pods Frameworks */ = {
+		FD5728822BF1D34696EB13E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

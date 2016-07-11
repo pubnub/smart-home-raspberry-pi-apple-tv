@@ -7,10 +7,10 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.3.0):
     - CocoaLumberjack/Default
-  - PubNub (4.3.3):
+  - PubNub (4.4.1):
     - CocoaLumberjack (= 2.3.0)
-    - PubNub/Core (= 4.3.3)
-  - PubNub/Core (4.3.3):
+    - PubNub/Core (= 4.4.1)
+  - PubNub/Core (4.4.1):
     - CocoaLumberjack (= 2.3.0)
 
 DEPENDENCIES:
@@ -18,8 +18,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
-  PubNub: 51acd937c947d931a75d2caef654fd12f7573e09
+  PubNub: 7c59158178877fed5004df938cd31d030856f54e
 
 PODFILE CHECKSUM: 156fd7a1ce3492244b96aa411808e43e2d0fc943
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

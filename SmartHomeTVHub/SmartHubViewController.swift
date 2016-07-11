@@ -24,12 +24,28 @@ class SmartHubViewController: UIViewController, UICollectionViewDelegate, UIColl
         collectionView.delegate = self
         appDelegate.client.addListener(self)
         appDelegate.client.subscribeToChannels(["Smart_Home"], withPresence: true)
-        objectStates = ["light" : "on", "temp" : "65", "thermostat" : "75"]
+        showActivityIndicator()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func client(client: PubNub, didReceiveMessage message: PNMessageResult) {
+        if let receivedobjectStates = message.data.message as? [String : String] {
+            //Receive initial object states when first subscribing to the channel
+            if !objectStatesSet {
+                objectStates = receivedobjectStates
+                activityIndicator.stopAnimating()
+                collectionView.reloadData()
+                objectStatesSet = true
+                //Receive temperature sensor updates
+            } else if let kettleTemp = receivedobjectStates["temp"] {
+                objectStates["temp"] = kettleTemp
+                collectionView.reloadData()
+            }
+        }
     }
     
     //Create and set cells for UI
