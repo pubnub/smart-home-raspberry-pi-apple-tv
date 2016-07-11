@@ -22,6 +22,10 @@ class SmartHubViewController: UIViewController, UICollectionViewDelegate, UIColl
         // Do any additional setup after loading the view, typically from a nib.
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.registerClass(LightBulbCell.self, forCellWithReuseIdentifier: "lightCell")
+        collectionView.registerClass(KettleCell.self, forCellWithReuseIdentifier: "kettleCell")
+        collectionView.registerClass(ThermostatCell.self, forCellWithReuseIdentifier: "thermostatCell")
+        collectionView.registerClass(IoTObjectCell.self, forCellWithReuseIdentifier: "objectCell")
         appDelegate.client.addListener(self)
         appDelegate.client.subscribeToChannels(["Smart_Home"], withPresence: true)
         showActivityIndicator()
@@ -50,34 +54,26 @@ class SmartHubViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     //Create and set cells for UI
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cellIdentifier: String? = nil
+        let object = Array(objectStates.keys)[indexPath.row]
+        let state = Array(objectStates.values)[indexPath.row]
+        
         switch Array(objectStates.keys)[indexPath.row] {
-        case "light":
-            collectionView.registerClass(LightBulbCell.self, forCellWithReuseIdentifier: "lightCell")
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("lightCell", forIndexPath: indexPath) as! LightBulbCell
-            let object = Array(objectStates.keys)[indexPath.row]
-            let state = Array(objectStates.values)[indexPath.row]
-            cell.configureCell(object, state: state)
-            return cell
-        case "temp":
-            collectionView.registerClass(KettleCell.self, forCellWithReuseIdentifier: "kettleCell")
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("kettleCell", forIndexPath: indexPath) as! KettleCell
-            let object = Array(objectStates.keys)[indexPath.row]
-            let state = Array(objectStates.values)[indexPath.row]
-            cell.configureCell(object, state: state)
-            return cell
-        case "thermostat":
-            collectionView.registerClass(ThermostatCell.self, forCellWithReuseIdentifier: "thermostatCell")
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("thermostatCell", forIndexPath: indexPath) as! ThermostatCell
-            let object = Array(objectStates.keys)[indexPath.row]
-            let state = Array(objectStates.values)[indexPath.row]
-            cell.configureCell(object, state: state)
-            return cell
-        default:
-            collectionView.registerClass(IoTObjectCell.self, forCellWithReuseIdentifier: "objectCell")
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("objectCell", forIndexPath: indexPath)
-            cell.hidden = true
-            return cell
+            case "light":
+                cellIdentifier = "lightCell"
+            case "temp":
+                cellIdentifier = "kettleCell"
+            case "thermostat":
+                cellIdentifier = "thermostatCell"
+            default:
+                cellIdentifier = "objectCell"
         }
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier!, forIndexPath: indexPath) as! IoTObjectCell
+        
+        cell.configureCell(object, state: state)
+        
+        return cell
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
